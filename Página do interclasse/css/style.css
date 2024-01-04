@@ -1,0 +1,77 @@
+main{
+    display: grid;
+    padding: 15vh 20vw;
+    background-color: var(--branco);
+}
+
+main h1{
+    font-size: 2.75rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: var(--azul);
+    margin-bottom: 3vh;
+}
+
+main p{
+    font-size: 1.2rem;
+    color: rgb(75, 75, 75);
+    line-height: 2.5;
+    text-align: justify;
+    margin-bottom: 7.5vh;
+}
+
+main img{
+    width: 100%;
+    box-shadow: 0 8px 48px -20px #333;
+    margin-bottom: 20vh;
+}
+
+main div{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.imagens{
+    width: 33%;
+    align-self: center;
+    box-shadow: none; 
+}
+
+@media screen and (max-width: 750px) {
+    main{
+        padding: 10vh 10vw;
+    }
+
+    main p{
+        line-height: 2;
+    }
+
+    main div{
+        flex-flow: column;
+        gap: 10vh;
+    }
+    
+    #logo{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        padding: 10vh 5vw;
+    }
+
+    #logo{
+        margin-bottom: 0;
+    }
+
+    main li{
+        font-size: 12px;
+    }
+
+    .imagens{
+        width: 75%;
+    }
+}
